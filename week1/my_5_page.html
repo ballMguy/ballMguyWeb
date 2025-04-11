@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5</title>
+        <style>
+            
+
+            p {
+                color:brown;
+            }
+
+            .font-green {
+                color: green;
+            }
+
+            .font-18 {
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>กรอกชื่อ</h2>
+        <input type="text" placeholder="Enter your name" id="name-input">
+        <br>
+        <h1 id="show-name">-</h1>
+        <input type="password" placeholder="Enter your password">
+        <br>
+        <input type="date" placeholder="date">
+        <script>
+            document.getElementById("name-input").addEventListener("input", function(){
+                const value = this.value;
+                document.getElementById("show-name").innerText = "สวัสดี: " + value;
+            });
+        </script>
+    </body>
+</html>

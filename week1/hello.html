@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5</title>
+        <style>
+            
+
+            p {
+                color:brown;
+            }
+
+            .font-green {
+                color: green;
+            }
+
+            .font-18 {
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>เลือกสี</h1>
+        <select id="color-select" style="width: 200px">
+            <option value="-">-</option>
+            <option value="red">แดง</option>
+            <option value="green">เขียว</option>
+            <option value="blue">ฟ้า</option>
+        </select>
+        <h1 id="show-color">-</h1>
+        <script>
+            document.getElementById("color-select").addEventListener("change", function() {
+                const value = this.value;
+                document.getElementById("show-color").innerText = "สีที่เลือก: " + value;
+                document.getElementById("show-color").style.color = value;
+            })
+        </script>
+    </body>
+</html>
