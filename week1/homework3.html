@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>การบ้าน3</title>
+</head>
+<body>
+    <h1>กรอกอายุ</h1>
+    <form id="age-form">
+        <label for="age">อายุ:</label>
+        <input type="number" placeholder="Enter your age" name="age" id="age">
+        <input type="submit" id="submit">
+    </form>
+    <h1 id="show-age">-</h1>
+    <script>
+        document.getElementById("age-form").addEventListener("submit", function(e){
+            e.preventDefault();
+            const value = document.getElementById('age').value;
+            if(value >= 60) {
+                document.getElementById("show-age").innerText = "วัยผู้สูงอายุ";
+            } else if(value >= 25) {
+                document.getElementById("show-age").innerText = "วัยทำงาน";
+            } else if(value >= 13) {
+                document.getElementById("show-age").innerText = "วัยรุ่น";
+            }else if(value < 13) {
+                document.getElementById("show-age").innerText = "วัยเด็ก";
+            }
+        });
+    </script>
+</body>
+</html>
