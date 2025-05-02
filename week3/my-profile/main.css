@@ -50,6 +50,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .section3-box-b {
@@ -57,6 +58,19 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.section3-box-header {
+    text-align: center;
+    color: rgb(255, 0, 149);
+    font-size: 40px;
+}
+
+.section3-box-content {
+    text-align: center;
+    color: rgb(255, 0, 149);
+    font-size: 20px;
 }
 
 .kanit-thin {
